@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:controller="calculator.Controller"
+      xmlns:fx="http://javafx.com/fxml"
+      alignment="center" spacing="5"
+      stylesheets="@calcStyle.css">
+
+    <Label fx:id="formula" GridPane.columnSpan="4" styleClass="label" alignment="CENTER_RIGHT"/>
+
+    <TextField fx:id="display" GridPane.columnSpan="4" editable="false" styleClass="text-field" alignment="CENTER_RIGHT"/>
+
+    <GridPane alignment="center" hgap="0" vgap="0">
+
+        <Button minHeight="70" minWidth="70" text="1" onAction="#handleButtonClick" GridPane.rowIndex="1" GridPane.columnIndex="0" styleClass="button"/>
+        <Button minHeight="70" minWidth="70" text="2" onAction="#handleButtonClick" GridPane.rowIndex="1" GridPane.columnIndex="1" styleClass="button"/>
+        <Button minHeight="70" minWidth="70" text="3" onAction="#handleButtonClick" GridPane.rowIndex="1" GridPane.columnIndex="2" styleClass="button"/>
+        <Button minHeight="70" minWidth="70" text="+" onAction="#handleButtonClick" GridPane.rowIndex="1" GridPane.columnIndex="3" styleClass="buttonOp"/>
+
+        <Button minHeight="70" minWidth="70" text="4" onAction="#handleButtonClick" GridPane.rowIndex="2" GridPane.columnIndex="0" styleClass="button"/>
+        <Button minHeight="70" minWidth="70" text="5" onAction="#handleButtonClick" GridPane.rowIndex="2" GridPane.columnIndex="1" styleClass="button"/>
+        <Button minHeight="70" minWidth="70" text="6" onAction="#handleButtonClick" GridPane.rowIndex="2" GridPane.columnIndex="2" styleClass="button"/>
+        <Button minHeight="70" minWidth="70" text="-" onAction="#handleButtonClick" GridPane.rowIndex="2" GridPane.columnIndex="3" styleClass="buttonOp"/>
+
+        <Button minHeight="70" minWidth="70" text="7" onAction="#handleButtonClick" GridPane.rowIndex="3" GridPane.columnIndex="0" styleClass="button"/>
+        <Button minHeight="70" minWidth="70" text="8" onAction="#handleButtonClick" GridPane.rowIndex="3" GridPane.columnIndex="1" styleClass="button"/>
+        <Button minHeight="70" minWidth="70" text="9" onAction="#handleButtonClick" GridPane.rowIndex="3" GridPane.columnIndex="2" styleClass="button"/>
+        <Button minHeight="70" minWidth="70" text="*" onAction="#handleButtonClick" GridPane.rowIndex="3" GridPane.columnIndex="3" styleClass="buttonOp"/>
+
+        <Button minHeight="70" minWidth="70" text="0" onAction="#handleButtonClick" GridPane.rowIndex="4" GridPane.columnIndex="0" styleClass="button"/>
+        <Button minHeight="70" maxWidth="69" text="^" onAction="#handleButtonClick" GridPane.rowIndex="4" GridPane.columnIndex="2" styleClass="buttonOp"/>
+        <Button minHeight="70" minWidth="70" text="=" onAction="#handleButtonClick" GridPane.rowIndex="4" GridPane.columnIndex="1" styleClass="buttonOp"/>
+        <Button minHeight="70" minWidth="70" text="/" onAction="#handleButtonClick" GridPane.rowIndex="4" GridPane.columnIndex="3" styleClass="buttonOp"/>
+
+        <Button minHeight="70" minWidth="70" text="C" onAction="#handleButtonClick" GridPane.rowIndex="1" GridPane.columnIndex="4" styleClass="buttonOp"/>
+        <Button minHeight="70" minWidth="70" text="\%" onAction="#handleButtonClick" GridPane.rowIndex="2" GridPane.columnIndex="4" styleClass="buttonOp"/>
+        <Button minHeight="70" minWidth="70" text="^2" onAction="#handleButtonClick" GridPane.rowIndex="3" GridPane.columnIndex="4" styleClass="buttonOp"/>
+        <Button minHeight="70" minWidth="70" text="sqrt" onAction="#handleButtonClick" GridPane.rowIndex="4" GridPane.columnIndex="4" styleClass="buttonOp"/>
+
+    </GridPane>
+</VBox>
